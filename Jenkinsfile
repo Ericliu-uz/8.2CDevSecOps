@@ -21,8 +21,7 @@ pipeline {
                 always {
                     emailext (
                         subject: "Test Stage Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                        to: "jiuqiliu0929@outlook.com",
-                        from: "jiuqiliu0929@outlook.com",
+                        to: "jiuqiliuau@gmail.com",
                         body: "Test stage has completed with status: ${currentBuild.currentResult}",
                         attachLog: true,
                         compressLog: true
@@ -45,7 +44,7 @@ pipeline {
                 always {
                     emailext (
                         subject: "Security Scan Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                        to: "jiuqiliu0929@outlook.com",
+                        to: "jiuqiliuau@gmail.com",
                         body: "Security scan stage has completed with status: ${currentBuild.currentResult}",
                         attachLog: true,
                         compressLog: true
