@@ -44,7 +44,7 @@ pipeline {
                 always {
                     emailext (
                         subject: "Security Scan Completed - ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                        to: "your-email@outlook.com",
+                        to: "jiuqiliu0929@outlook.com",
                         body: "Security scan stage has completed with status: ${currentBuild.currentResult}",
                         attachLog: true,
                         compressLog: true
